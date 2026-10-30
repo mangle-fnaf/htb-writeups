@@ -9,6 +9,7 @@ A collection of my Hack The Box Starting Point and lab walkthroughs.
 - [x] Meow
 - [x] Fawn
 - [x] Dancing
+- [x] Explosion
 - [x] Redeemer
 - [x] Preignition
 - [x] Mongod
