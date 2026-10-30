@@ -8,6 +8,16 @@ The goal is to identify the exposed service, gain access to the machine, and ret
 
 ---
 
+## Skills Practised
+
+- Enumeration
+- Service Discovery
+- Telnet
+- Linux Basics
+- File Enumeration
+
+---
+
 ## Enumeration
 
 The first thing I did was run an Nmap scan against the target machine to see what services were exposed.
@@ -57,7 +67,7 @@ The Nmap scan identified Telnet as the only exposed service, so it made sense to
 
 After connecting, the service prompted for a username.
 
-### Login Attempt
+### Authentication
 
 ```text
 root
@@ -65,7 +75,7 @@ root
 
 ### Why I tried it
 
-The root account is the default administrator account on Linux systems. Testing common or default credentials is a basic enumeration step.
+I tested the root account because it is the default administrator account on Linux systems and is often a good starting point during basic enumeration.
 
 ### Result
 
@@ -144,6 +154,12 @@ cat flag.txt
 - The importance of enumeration before attempting exploitation.
 - How weak authentication can lead to full system compromise.
 - Basic Linux file navigation and inspection.
+
+---
+
+## Challenges
+
+This was my first time interacting with a machine through Telnet. The challenge reinforced the importance of identifying exposed services before attempting exploitation and showed how insecure remote access protocols can create unnecessary risk when they are not configured securely.
 
 ---
 
